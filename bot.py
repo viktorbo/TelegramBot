@@ -4,7 +4,7 @@ import json
 with open('bot_config.json', 'r', encoding='utf-8') as bot_config:
     config = json.load(bot_config)
 
-bot = telebot.TeleBot(token=config['token'])
+bot = telebot.TeleBot(token=config['viktorbo_bot_token'])
 
 
 @bot.message_handler(commands=['start', 'help'])
